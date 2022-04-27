@@ -56,7 +56,7 @@ with open("data/movies.csv", 'r') as f:
     csvreader = csv.reader(f)
     header = next(csvreader)
     for row in csvreader:
-    	movies_list.append({'_id': row[0], 'title': row[1], 'genres': row[2]})
+    	movies_list.append({'movieId': row[0], 'title': row[1], 'genres': row[2]})
 
 results = movies_collection.insert_many(movies_list)
 

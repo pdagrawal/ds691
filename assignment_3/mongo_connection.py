@@ -1,7 +1,8 @@
 import pymongo
 from pymongo import MongoClient
+from .creds import *
 
-cluster = MongoClient("mongodb+srv://mongo-db-user:GzThTOx3Q4Wy87p3@cluster0.fakv1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+cluster = MongoClient(MONGODB_URL)
 db = cluster["discord"]
 collection = db["test"]
 
