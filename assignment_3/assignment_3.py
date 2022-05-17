@@ -13,11 +13,11 @@ movies_collection = db['movies']
 
 # Question: 2
 print('----------------------Question: 2----------------------')
-datalist = [{'name': 'The Avengers (2012)', 'genre': 'Sci-Fci', 'rating': 9},
-			{'name': 'Thor (2011)', 'genre': 'Sci-Fci', 'rating': 9.5},
-			{'name': 'Captain Marvel (2019)', 'genre': 'Sci-Fci', 'rating': 7},
-			{'name': 'Doctor Strange (2016)', 'genre': 'Sci-Fci', 'rating': 10},
-			{'name': 'Guardians of the galaxy (2014)', 'genre': 'Sci-Fci', 'rating': 6}]
+datalist = [{'title': 'The Avengers (2012)', 'genre': 'Sci-Fci', 'rating': 9},
+			{'title': 'Thor (2011)', 'genre': 'Sci-Fci', 'rating': 9.5},
+			{'title': 'Captain Marvel (2019)', 'genre': 'Sci-Fci', 'rating': 7},
+			{'title': 'Doctor Strange (2016)', 'genre': 'Sci-Fci', 'rating': 10},
+			{'title': 'Guardians of the galaxy (2014)', 'genre': 'Sci-Fci', 'rating': 6}]
 
 results = movies_collection.insert_many(datalist)
 print('5 movies added to the database in movies collection')
